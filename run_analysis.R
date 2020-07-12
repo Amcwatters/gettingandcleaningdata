@@ -9,7 +9,7 @@
 ##  load dplyr package
 library(dplyr)
 
-##  Download the zipfile for the assignment to a folder clled "UCI HAR Dataset" 
+##  Download the zipfile for the assignment to a folder clled "UCI HAR Dataset" (creating the folder if it doesn't exist)
 ##  Then unzip the download
 if(!file.exists("./UCI HAR Dataset")){dir.create("./UCI HAR Dataset")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -40,23 +40,20 @@ names(features)<- featuresnames$V2
 combineddataset <- cbind(subject, activity)
 UCIdataset <- cbind(combineddataset, features)
 
-## Identify fields which contain mean or standard deviation data and use these to create a list of fields for a subset,
-## along with the subject and activity label columns
-subset <- c("subject", "activity", as.character(featuresnames$V2[grep("mean\\(\\)|std\\(\\)", featuresnames$V2)]))
-
-## Create a subset using these column or field names
-UCIdatasubset<-subset(UCIdataset,select=subset)
+## Identify fields which contain mean or standard deviation data and use these to create a subset
+UCIdatasubset  <- UCIdataset %>% select(subject, activitycode, contains("mean"), contains("std"))
 
 ## Obtain descriptive activity labels from the file “activity_labels.txt” and add them as a new column using merge
 activitylabels <- read.table("./UCI HAR Dataset/activity_labels.txt",header = FALSE)
 UCIdatasubset <- merge(UCIdatasubset, activitylabels, by.x = "activitycode",by.y = "V1",all.x = TRUE )
 
-## Change the new activity column name from V2
+## Change the new activity column name from V2 and remove old activitycode column
 UCIdatasubset <- rename(UCIdatasubset, activity=V2)
+UCIdatasubset <- UCIdatasubset %>% select(-activitycode)
 
 
 ## Change the feature column names to be more descriptive
-## Change acronyms and abbreviations to the full descriptive words, and remove extra characters
+## Change acronyms and abbreviations to the full descriptive words
 names(UCIdatasubset)<-gsub("^t", "time", names(UCIdatasubset))
 names(UCIdatasubset)<-gsub("^f", "frequency", names(UCIdatasubset))
 names(UCIdatasubset)<-gsub("Acc", "Accelerometer", names(UCIdatasubset))
