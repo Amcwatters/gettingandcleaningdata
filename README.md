@@ -42,7 +42,7 @@ It makes use of the dplyr package and performs the following steps:
   Identify fields which contain mean or standard deviation data and use these to create a list of fields for a subset, along with the subject and activity label columns
   Create a subset using these column or field names
   Obtain descriptive activity labels from the file “activity_labels.txt” and add them as a new column using merge
-  Change the new activity column name from V2
+  Change the new activity column name from V2 and remove the old activitycode column
   Change the feature column names to be more descriptive
   Change acronyms and abbreviations to the full descriptive words
   Create a 2nd tidy dataset with the average of each variable for each activity and each subject
