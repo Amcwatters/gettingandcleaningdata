@@ -1,0 +1,268 @@
+---
+title: Codebook for FinalUCIDataset.txt
+date: 2020-07-12 
+author: Anna M
+---
+
+Data source:
+This assignment uses the Human Activity Recognition Using Smartphones Data Set. The Human Activity Recognition database has been created built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. More information on this data source can be found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones The specific copy of the dataset used for this assignment was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip on 12/07/2020
+
+Data feaures
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals include the following, which were selected for the assignment: 
+
+mean(): Mean value
+std(): Standard deviation
+
+---------------------------------------------
+
+Data preparation
+
+The script which prepares the dataset is run_analysis.R
+
+It makes use of the dplyr package and performs the following steps:
+
+Load the dplyr package Download the zipfile for the assignment to a folder clled "UCI HAR Dataset" (creating the folder if it doesn't exist in the working directory)
+Then unzip the download Load each of the 6 test and train datasets into R into a separate data frame Join the test and train datasets using rbind (concatenating by row), and set descriptive fieldnames 
+    subjecttest and subjecttrain contain the ID of each data subject 
+    ytest and ytrain contain the ID of each activity measured 
+    features fieldnames are drawn from the second column of the reference table "features.txt" 
+Use cbind to join the three dataframes together (by adding the extra columns) - subject, activity, features 
+Identify fields which contain mean or standard deviation data and use these to create a list of fields for a subset, along with the subject and activity label columns Create a subset using these column or field names 
+Obtain descriptive activity labels from the file “activity_labels.txt” and add them as a new column using merge 
+Change the new activity column name from V2 and remove the old activitycode column 
+Change the feature column names to be more descriptive 
+Change acronyms and abbreviations to the full descriptive words 
+Create a 2nd tidy dataset with the average of each variable for each activity and each subject
+Output the data to a text file in the working directory
+
+
+# Data report overview
+The final dataset has the following dimensions:
+
+
+---------------------------------
+Feature                    Result
+------------------------ --------
+Number of observations        180
+
+Number of variables            88
+---------------------------------
+
+
+# Codebook summary table
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Label   Variable                                                   Class         # unique  Missing  Description  
+                                                                                   values                        
+------- ---------------------------------------------------------- ----------- ---------- --------- -----------------------------------------------------------------------------------------------------
+        **[subject]**                                              integer             30  0.00 %   Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.          
+
+        **[activity]**                                             character            6  0.00 %   The 6 activies performed (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)              
+        
+        **[timeBodyAccelerometer-mean()-X]**                       numeric            180  0.00 %   Mean time for Body Acceleration Measurement Windows in the X axial direction               
+
+        **[timeBodyAccelerometer-mean()-Y]**                       numeric            180  0.00 %   Mean time for Body Acceleration Measurement Windows in the y axial direction             
+
+        **[timeBodyAccelerometer-mean()-Z]**                       numeric            180  0.00 %   Mean time for Body Acceleration Measurement Windows in the z axial direction                
+
+        **[timeGravityAccelerometer-mean()-X]**                    numeric            180  0.00 %   Mean time for Gravity Acceleration Measurement Windows in the x axial direction           
+
+        **[timeGravityAccelerometer-mean()-Y]**                    numeric            180  0.00 %   Mean time for Gravity Acceleration Measurement Windows in the y axial direction                 
+
+        **[timeGravityAccelerometer-mean()-Z]**                    numeric            180  0.00 %   Mean time for Gravity Acceleration Measurement Windows in the z axial direction                 
+
+        **[timeBodyAccelerometerJerk-mean()-X]**                   numeric            180  0.00 %   Mean time for Body Jerk Acceleration Measurement Windows in the x axial direction                 
+
+        **[timeBodyAccelerometerJerk-mean()-Y]**                   numeric            180  0.00 %   Mean time for Body Jerk Acceleration Measurement Windows in the y axial direction               
+
+        **[timeBodyAccelerometerJerk-mean()-Z]**                   numeric            180  0.00 %   Mean time for Body Jerk Acceleration Measurement Windows in the z axial direction               
+
+        **[timeBodyGyroscope-mean()-X]**                           numeric            180  0.00 %   Mean time for Body Gyroscope Measurement Windows in the x axial direction               
+
+        **[timeBodyGyroscope-mean()-Y]**                           numeric            180  0.00 %   Mean time for Body Gyroscope Measurement Windows in the y axial direction                
+
+        **[timeBodyGyroscope-mean()-Z]**                           numeric            180  0.00 %   Mean time for Body Gyroscope Measurement Windows in the z axial direction                
+
+        **[timeBodyGyroscopeJerk-mean()-X]**                       numeric            180  0.00 %   Mean time for Body Jerk Gyroscope Measurement Windows in the x axial direction                
+
+        **[timeBodyGyroscopeJerk-mean()-Y]**                       numeric            180  0.00 %   Mean time for Body Jerk Gyroscope Measurement Windows in the y axial direction                
+
+        **[timeBodyGyroscopeJerk-mean()-Z]**                       numeric            180  0.00 %   Mean time for Body Jerk Gyroscope Measurement Windows in the z axial direction                  
+
+        **[timeBodyAccelerometerMagnitude-mean()]**                numeric            180  0.00 %   Mean time for Body Acceleration Magnitude Measurement Windows                
+
+        **[timeGravityAccelerometerMagnitude-mean()]**             numeric            180  0.00 %   Mean time for Gravity Acceleration Magnitude Measurement Windows              
+
+        **[timeBodyAccelerometerJerkMagnitude-mean()]**            numeric            180  0.00 %   Mean time for Body Jerk Acceleration Magnitude Measurement Windows            
+
+        **[timeBodyGyroscopeMagnitude-mean()]**                    numeric            180  0.00 %   Mean time for Body Gyroscope Magnitude Measurement Windows                
+
+        **[timeBodyGyroscopeJerkMagnitude-mean()]**                numeric            180  0.00 %   Mean time for Body Gyroscope Jerk Magnitude Measurement Windows            
+
+        **[frequencyBodyAccelerometer-mean()-X]**                  numeric            180  0.00 %   Frequency of Body Acceleration Measurement Windows in the X axial direction             
+
+        **[frequencyBodyAccelerometer-mean()-Y]**                  numeric            180  0.00 %   Frequency of Body Acceleration Measurement Windows in the y axial direction                 
+
+        **[frequencyBodyAccelerometer-mean()-Z]**                  numeric            180  0.00 %   Frequency of Body Acceleration Measurement Windows in the z axial direction               
+
+        **[frequencyBodyAccelerometer-meanFreq()-X]**              numeric            180  0.00 %                  
+
+        **[frequencyBodyAccelerometer-meanFreq()-Y]**              numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometer-meanFreq()-Z]**              numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-mean()-X]**              numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-mean()-Y]**              numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-mean()-Z]**              numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-meanFreq()-X]**          numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-meanFreq()-Y]**          numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-meanFreq()-Z]**          numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-mean()-X]**                      numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-mean()-Y]**                      numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-mean()-Z]**                      numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-meanFreq()-X]**                  numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-meanFreq()-Y]**                  numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-meanFreq()-Z]**                  numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerMagnitude-mean()]**           numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerMagnitude-meanFreq()]**       numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerkMagnitude-mean()]**       numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerkMagnitude-meanFreq()]**   numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscopeMagnitude-mean()]**               numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscopeMagnitude-meanFreq()]**           numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscopeJerkMagnitude-mean()]**           numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscopeJerkMagnitude-meanFreq()]**       numeric            180  0.00 %                
+
+        **[angle(tBodyAccelerometerMean,gravity)]**                numeric            180  0.00 %                
+
+        **[angle(tBodyAccelerometerJerkMean),gravityMean)]**       numeric            180  0.00 %                
+
+        **[angle(tBodyGyroscopeMean,gravityMean)]**                numeric            180  0.00 %                
+
+        **[angle(tBodyGyroscopeJerkMean,gravityMean)]**            numeric            180  0.00 %                
+
+        **[angle(X,gravityMean)]**                                 numeric            180  0.00 %                
+
+        **[angle(Y,gravityMean)]**                                 numeric            180  0.00 %                
+
+        **[angle(Z,gravityMean)]**                                 numeric            180  0.00 %                
+
+        **[timeBodyAccelerometer-std()-X]**                        numeric            180  0.00 %                
+
+        **[timeBodyAccelerometer-std()-Y]**                        numeric            180  0.00 %                
+
+        **[timeBodyAccelerometer-std()-Z]**                        numeric            180  0.00 %                
+
+        **[timeGravityAccelerometer-std()-X]**                     numeric            180  0.00 %                
+
+        **[timeGravityAccelerometer-std()-Y]**                     numeric            180  0.00 %                
+
+        **[timeGravityAccelerometer-std()-Z]**                     numeric            180  0.00 %                
+
+        **[timeBodyAccelerometerJerk-std()-X]**                    numeric            180  0.00 %                
+
+        **[timeBodyAccelerometerJerk-std()-Y]**                    numeric            180  0.00 %                
+
+        **[timeBodyAccelerometerJerk-std()-Z]**                    numeric            180  0.00 %                
+
+        **[timeBodyGyroscope-std()-X]**                            numeric            180  0.00 %                
+
+        **[timeBodyGyroscope-std()-Y]**                            numeric            180  0.00 %                
+
+        **[timeBodyGyroscope-std()-Z]**                            numeric            180  0.00 %                
+
+        **[timeBodyGyroscopeJerk-std()-X]**                        numeric            180  0.00 %                
+
+        **[timeBodyGyroscopeJerk-std()-Y]**                        numeric            180  0.00 %                
+
+        **[timeBodyGyroscopeJerk-std()-Z]**                        numeric            180  0.00 %                
+
+        **[timeBodyAccelerometerMagnitude-std()]**                 numeric            180  0.00 %                
+
+        **[timeGravityAccelerometerMagnitude-std()]**              numeric            180  0.00 %                
+
+        **[timeBodyAccelerometerJerkMagnitude-std()]**             numeric            180  0.00 %                
+
+        **[timeBodyGyroscopeMagnitude-std()]**                     numeric            180  0.00 %                
+
+        **[timeBodyGyroscopeJerkMagnitude-std()]**                 numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometer-std()-X]**                   numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometer-std()-Y]**                   numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometer-std()-Z]**                   numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-std()-X]**               numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-std()-Y]**               numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerk-std()-Z]**               numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-std()-X]**                       numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-std()-Y]**                       numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscope-std()-Z]**                       numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerMagnitude-std()]**            numeric            180  0.00 %                
+
+        **[frequencyBodyAccelerometerJerkMagnitude-std()]**        numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscopeMagnitude-std()]**                numeric            180  0.00 %                
+
+        **[frequencyBodyGyroscopeJerkMagnitude-std()]**            numeric            180  0.00 %                
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
