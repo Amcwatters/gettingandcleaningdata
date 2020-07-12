@@ -86,45 +86,45 @@ Label   Variable                                                   Class        
 
         **[activity]**                                             character            6  0.00 %   The 6 activies performed (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)              
         
-        **[timeBodyAccelerometer-mean()-X]**                       numeric            180  0.00 %   Mean time for Body Acceleration Measurement Windows in the X axial direction               
+        **[timeBodyAccelerometer-mean()-X]**                       numeric            180  0.00 %   Mean time domain signals for Body Acceleration Measurement Windows in the X axial direction               
 
-        **[timeBodyAccelerometer-mean()-Y]**                       numeric            180  0.00 %   Mean time for Body Acceleration Measurement Windows in the y axial direction             
+        **[timeBodyAccelerometer-mean()-Y]**                       numeric            180  0.00 %   Mean time domain signals for Body Acceleration Measurement Windows in the y axial direction             
 
-        **[timeBodyAccelerometer-mean()-Z]**                       numeric            180  0.00 %   Mean time for Body Acceleration Measurement Windows in the z axial direction                
+        **[timeBodyAccelerometer-mean()-Z]**                       numeric            180  0.00 %   Mean time domain signals for Body Acceleration Measurement Windows in the z axial direction                
 
-        **[timeGravityAccelerometer-mean()-X]**                    numeric            180  0.00 %   Mean time for Gravity Acceleration Measurement Windows in the x axial direction           
+        **[timeGravityAccelerometer-mean()-X]**                    numeric            180  0.00 %   Mean time domain signals for Gravity Acceleration Measurement Windows in the x axial direction           
 
-        **[timeGravityAccelerometer-mean()-Y]**                    numeric            180  0.00 %   Mean time for Gravity Acceleration Measurement Windows in the y axial direction                 
+        **[timeGravityAccelerometer-mean()-Y]**                    numeric            180  0.00 %   Mean time domain signals for Gravity Acceleration Measurement Windows in the y axial direction                 
 
-        **[timeGravityAccelerometer-mean()-Z]**                    numeric            180  0.00 %   Mean time for Gravity Acceleration Measurement Windows in the z axial direction                 
+        **[timeGravityAccelerometer-mean()-Z]**                    numeric            180  0.00 %   Mean time domain signals for Gravity Acceleration Measurement Windows in the z axial direction                 
 
-        **[timeBodyAccelerometerJerk-mean()-X]**                   numeric            180  0.00 %   Mean time for Body Jerk Acceleration Measurement Windows in the x axial direction                 
+        **[timeBodyAccelerometerJerk-mean()-X]**                   numeric            180  0.00 %   Mean time domain signals for Body Jerk Acceleration Measurement Windows in the x axial direction                 
 
-        **[timeBodyAccelerometerJerk-mean()-Y]**                   numeric            180  0.00 %   Mean time for Body Jerk Acceleration Measurement Windows in the y axial direction               
+        **[timeBodyAccelerometerJerk-mean()-Y]**                   numeric            180  0.00 %   Mean time domain signals for Body Jerk Acceleration Measurement Windows in the y axial direction               
 
-        **[timeBodyAccelerometerJerk-mean()-Z]**                   numeric            180  0.00 %   Mean time for Body Jerk Acceleration Measurement Windows in the z axial direction               
+        **[timeBodyAccelerometerJerk-mean()-Z]**                   numeric            180  0.00 %   Mean time domain signals for Body Jerk Acceleration Measurement Windows in the z axial direction               
 
-        **[timeBodyGyroscope-mean()-X]**                           numeric            180  0.00 %   Mean time for Body Gyroscope Measurement Windows in the x axial direction               
+        **[timeBodyGyroscope-mean()-X]**                           numeric            180  0.00 %   Mean time domain signals for Body Gyroscope Measurement Windows in the x axial direction               
 
-        **[timeBodyGyroscope-mean()-Y]**                           numeric            180  0.00 %   Mean time for Body Gyroscope Measurement Windows in the y axial direction                
+        **[timeBodyGyroscope-mean()-Y]**                           numeric            180  0.00 %   Mean time domain signals for Body Gyroscope Measurement Windows in the y axial direction                
 
-        **[timeBodyGyroscope-mean()-Z]**                           numeric            180  0.00 %   Mean time for Body Gyroscope Measurement Windows in the z axial direction                
+        **[timeBodyGyroscope-mean()-Z]**                           numeric            180  0.00 %   Mean time domain signals for Body Gyroscope Measurement Windows in the z axial direction                
 
-        **[timeBodyGyroscopeJerk-mean()-X]**                       numeric            180  0.00 %   Mean time for Body Jerk Gyroscope Measurement Windows in the x axial direction                
+        **[timeBodyGyroscopeJerk-mean()-X]**                       numeric            180  0.00 %   Mean time domain signals for Body Jerk Gyroscope Measurement Windows in the x axial direction                
 
-        **[timeBodyGyroscopeJerk-mean()-Y]**                       numeric            180  0.00 %   Mean time for Body Jerk Gyroscope Measurement Windows in the y axial direction                
+        **[timeBodyGyroscopeJerk-mean()-Y]**                       numeric            180  0.00 %   Mean time domain signals for Body Jerk Gyroscope Measurement Windows in the y axial direction                
 
-        **[timeBodyGyroscopeJerk-mean()-Z]**                       numeric            180  0.00 %   Mean time for Body Jerk Gyroscope Measurement Windows in the z axial direction                  
+        **[timeBodyGyroscopeJerk-mean()-Z]**                       numeric            180  0.00 %   Mean time domain signals for Body Jerk Gyroscope Measurement Windows in the z axial direction                  
 
-        **[timeBodyAccelerometerMagnitude-mean()]**                numeric            180  0.00 %   Mean time for Body Acceleration Magnitude Measurement Windows                
+        **[timeBodyAccelerometerMagnitude-mean()]**                numeric            180  0.00 %   Mean time domain signals for Body Acceleration Magnitude Measurement Windows                
 
-        **[timeGravityAccelerometerMagnitude-mean()]**             numeric            180  0.00 %   Mean time for Gravity Acceleration Magnitude Measurement Windows              
+        **[timeGravityAccelerometerMagnitude-mean()]**             numeric            180  0.00 %   Mean time domain signals for Gravity Acceleration Magnitude Measurement Windows              
 
-        **[timeBodyAccelerometerJerkMagnitude-mean()]**            numeric            180  0.00 %   Mean time for Body Jerk Acceleration Magnitude Measurement Windows            
+        **[timeBodyAccelerometerJerkMagnitude-mean()]**            numeric            180  0.00 %   Mean time domain signals for Body Jerk Acceleration Magnitude Measurement Windows            
 
-        **[timeBodyGyroscopeMagnitude-mean()]**                    numeric            180  0.00 %   Mean time for Body Gyroscope Magnitude Measurement Windows                
+        **[timeBodyGyroscopeMagnitude-mean()]**                    numeric            180  0.00 %   Mean time domain signals for Body Gyroscope Magnitude Measurement Windows                
 
-        **[timeBodyGyroscopeJerkMagnitude-mean()]**                numeric            180  0.00 %   Mean time for Body Gyroscope Jerk Magnitude Measurement Windows            
+        **[timeBodyGyroscopeJerkMagnitude-mean()]**                numeric            180  0.00 %   Mean time domain signals for Body Gyroscope Jerk Magnitude Measurement Windows            
 
         **[frequencyBodyAccelerometer-mean()-X]**                  numeric            180  0.00 %   Frequency of Body Acceleration Measurement Windows in the X axial direction             
 
@@ -132,131 +132,131 @@ Label   Variable                                                   Class        
 
         **[frequencyBodyAccelerometer-mean()-Z]**                  numeric            180  0.00 %   Frequency of Body Acceleration Measurement Windows in the z axial direction               
 
-        **[frequencyBodyAccelerometer-meanFreq()-X]**              numeric            180  0.00 %                  
+        **[frequencyBodyAccelerometer-meanFreq()-X]**              numeric            180  0.00 %   mean frequency of Body Acceleration Measurement Windows in the x axial direction 
 
-        **[frequencyBodyAccelerometer-meanFreq()-Y]**              numeric            180  0.00 %                
+        **[frequencyBodyAccelerometer-meanFreq()-Y]**              numeric            180  0.00 %   mean frequency of Body Acceleration Measurement Windows in the y axial direction              
 
-        **[frequencyBodyAccelerometer-meanFreq()-Z]**              numeric            180  0.00 %                
+        **[frequencyBodyAccelerometer-meanFreq()-Z]**              numeric            180  0.00 %   mean frequency of Body Acceleration Measurement Windows in the z axial direction              
 
-        **[frequencyBodyAccelerometerJerk-mean()-X]**              numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-mean()-X]**              numeric            180  0.00 %   Frequency of Body Jerk Accelerometer Measurement Windows in the X axial direction             
 
-        **[frequencyBodyAccelerometerJerk-mean()-Y]**              numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-mean()-Y]**              numeric            180  0.00 %   Frequency of Body Jerk Accelerometer Measurement Windows in the y axial direction              
 
-        **[frequencyBodyAccelerometerJerk-mean()-Z]**              numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-mean()-Z]**              numeric            180  0.00 %   Frequency of Body Jerk Accelerometer Measurement Windows in the z axial direction              
 
-        **[frequencyBodyAccelerometerJerk-meanFreq()-X]**          numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-meanFreq()-X]**          numeric            180  0.00 %   Mean frequency of Body Jerk Accelerometer Measurement Windows in the X axial direction              
 
-        **[frequencyBodyAccelerometerJerk-meanFreq()-Y]**          numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-meanFreq()-Y]**          numeric            180  0.00 %   Mean frequency of Body Jerk Accelerometer Measurement Windows in the y axial direction                
 
-        **[frequencyBodyAccelerometerJerk-meanFreq()-Z]**          numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-meanFreq()-Z]**          numeric            180  0.00 %   Mean frequency of Body Jerk Accelerometer Measurement Windows in the z axial direction                
 
-        **[frequencyBodyGyroscope-mean()-X]**                      numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-mean()-X]**                      numeric            180  0.00 %   Frequency of Body Gyroscope Measurement Windows in the X axial direction              
 
-        **[frequencyBodyGyroscope-mean()-Y]**                      numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-mean()-Y]**                      numeric            180  0.00 %   Frequency of Body Gyroscope Measurement Windows in the y axial direction             
 
-        **[frequencyBodyGyroscope-mean()-Z]**                      numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-mean()-Z]**                      numeric            180  0.00 %   Frequency of Body Gyroscope Measurement Windows in the z axial direction             
 
-        **[frequencyBodyGyroscope-meanFreq()-X]**                  numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-meanFreq()-X]**                  numeric            180  0.00 %   Mean frequency of Body Gyroscope Measurement Windows in the X axial direction             
 
-        **[frequencyBodyGyroscope-meanFreq()-Y]**                  numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-meanFreq()-Y]**                  numeric            180  0.00 %   Mean frequency of Body Gyroscope Measurement Windows in the y axial direction              
 
-        **[frequencyBodyGyroscope-meanFreq()-Z]**                  numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-meanFreq()-Z]**                  numeric            180  0.00 %   Mean frequency of Body Gyroscope Measurement Windows in the z axial direction              
 
-        **[frequencyBodyAccelerometerMagnitude-mean()]**           numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerMagnitude-mean()]**           numeric            180  0.00 %   Frequency of Body Acellerometer Magnitude Windows 
+        
+        **[frequencyBodyAccelerometerMagnitude-meanFreq()]**       numeric            180  0.00 %   Mean frequency of Body Acellerometer Magnitude Windows              
 
-        **[frequencyBodyAccelerometerMagnitude-meanFreq()]**       numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerkMagnitude-mean()]**       numeric            180  0.00 %   Frequency of Body Jerk Acellerometer Magnitude Windows              
 
-        **[frequencyBodyAccelerometerJerkMagnitude-mean()]**       numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerkMagnitude-meanFreq()]**   numeric            180  0.00 %   Mean frequency of Body Acellerometer Magnitude Windows              
 
-        **[frequencyBodyAccelerometerJerkMagnitude-meanFreq()]**   numeric            180  0.00 %                
+        **[frequencyBodyGyroscopeMagnitude-mean()]**               numeric            180  0.00 %   Frequency of Body Gyroscope Magnitude Windows              
 
-        **[frequencyBodyGyroscopeMagnitude-mean()]**               numeric            180  0.00 %                
+        **[frequencyBodyGyroscopeMagnitude-meanFreq()]**           numeric            180  0.00 %   Mean frequency of Body Gyroscope Magnitude Windows              
 
-        **[frequencyBodyGyroscopeMagnitude-meanFreq()]**           numeric            180  0.00 %                
+        **[frequencyBodyGyroscopeJerkMagnitude-mean()]**           numeric            180  0.00 %   Frequency of Body Gyroscope Jerk Magnitude Windows              
 
-        **[frequencyBodyGyroscopeJerkMagnitude-mean()]**           numeric            180  0.00 %                
+        **[frequencyBodyGyroscopeJerkMagnitude-meanFreq()]**       numeric            180  0.00 %   Mean frequency of Body Gyroscope Magnitude Windows              
 
-        **[frequencyBodyGyroscopeJerkMagnitude-meanFreq()]**       numeric            180  0.00 %                
+        **[angle(tBodyAccelerometerMean,gravity)]**                numeric            180  0.00 %   Angle of Body Accelerometer mean             
 
-        **[angle(tBodyAccelerometerMean,gravity)]**                numeric            180  0.00 %                
+        **[angle(tBodyAccelerometerJerkMean),gravityMean)]**       numeric            180  0.00 %   Angle of Body Accelerometer mean             
 
-        **[angle(tBodyAccelerometerJerkMean),gravityMean)]**       numeric            180  0.00 %                
+        **[angle(tBodyGyroscopeMean,gravityMean)]**                numeric            180  0.00 %   Angle of Body Gyroscope mean            
 
-        **[angle(tBodyGyroscopeMean,gravityMean)]**                numeric            180  0.00 %                
+        **[angle(tBodyGyroscopeJerkMean,gravityMean)]**            numeric            180  0.00 %   Angle of Body Jerk Gyroscope mean             
 
-        **[angle(tBodyGyroscopeJerkMean,gravityMean)]**            numeric            180  0.00 %                
+        **[angle(X,gravityMean)]**                                 numeric            180  0.00 %   Mean angle of X axial direction             
 
-        **[angle(X,gravityMean)]**                                 numeric            180  0.00 %                
+        **[angle(Y,gravityMean)]**                                 numeric            180  0.00 %   Mean angle of y axial direction                 
 
-        **[angle(Y,gravityMean)]**                                 numeric            180  0.00 %                
+        **[angle(Z,gravityMean)]**                                 numeric            180  0.00 %   Mean angle of z axial direction                 
 
-        **[angle(Z,gravityMean)]**                                 numeric            180  0.00 %                
+        **[timeBodyAccelerometer-std()-X]**                        numeric            180  0.00 %   Standard deviation of time domain signals for Body Acceleration Measurement Windows in the X axial direction             
 
-        **[timeBodyAccelerometer-std()-X]**                        numeric            180  0.00 %                
+        **[timeBodyAccelerometer-std()-Y]**                        numeric            180  0.00 %   Standard deviation of time domain signals for Body Acceleration Measurement Windows in the y axial direction                
 
-        **[timeBodyAccelerometer-std()-Y]**                        numeric            180  0.00 %                
+        **[timeBodyAccelerometer-std()-Z]**                        numeric            180  0.00 %   Standard deviation of time domain signals for Body Acceleration Measurement Windows in the z axial direction                
 
-        **[timeBodyAccelerometer-std()-Z]**                        numeric            180  0.00 %                
+        **[timeGravityAccelerometer-std()-X]**                     numeric            180  0.00 %   Standard deviation of time domain signals for Gravity Acceleration Measurement Windows in the X axial direction                
 
-        **[timeGravityAccelerometer-std()-X]**                     numeric            180  0.00 %                
+        **[timeGravityAccelerometer-std()-Y]**                     numeric            180  0.00 %   Standard deviation of time domain signals for Gravity Acceleration Measurement Windows in the y axial direction              
 
-        **[timeGravityAccelerometer-std()-Y]**                     numeric            180  0.00 %                
+        **[timeGravityAccelerometer-std()-Z]**                     numeric            180  0.00 %   Standard deviation of time domain signals for Gravity Acceleration Measurement Windows in the z axial direction             
 
-        **[timeGravityAccelerometer-std()-Z]**                     numeric            180  0.00 %                
+        **[timeBodyAccelerometerJerk-std()-X]**                    numeric            180  0.00 %   Standard deviation of time domain signals for Body Jerk Acceleration Measurement Windows in the X axial direction             
 
-        **[timeBodyAccelerometerJerk-std()-X]**                    numeric            180  0.00 %                
+        **[timeBodyAccelerometerJerk-std()-Y]**                    numeric            180  0.00 %   Standard deviation of time domain signals for Body Jerk Acceleration Measurement Windows in the y axial direction               
 
-        **[timeBodyAccelerometerJerk-std()-Y]**                    numeric            180  0.00 %                
+        **[timeBodyAccelerometerJerk-std()-Z]**                    numeric            180  0.00 %   Standard deviation of time domain signals for Body Jerk Acceleration Measurement Windows in the z axial direction               
 
-        **[timeBodyAccelerometerJerk-std()-Z]**                    numeric            180  0.00 %                
+        **[timeBodyGyroscope-std()-X]**                            numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Measurement Windows in the X axial direction               
 
-        **[timeBodyGyroscope-std()-X]**                            numeric            180  0.00 %                
+        **[timeBodyGyroscope-std()-Y]**                            numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Measurement Windows in the y axial direction               
 
-        **[timeBodyGyroscope-std()-Y]**                            numeric            180  0.00 %                
+        **[timeBodyGyroscope-std()-Z]**                            numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Measurement Windows in the z axial direction               
 
-        **[timeBodyGyroscope-std()-Z]**                            numeric            180  0.00 %                
+        **[timeBodyGyroscopeJerk-std()-X]**                        numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Jerk Measurement Windows in the X axial direction               
 
-        **[timeBodyGyroscopeJerk-std()-X]**                        numeric            180  0.00 %                
+        **[timeBodyGyroscopeJerk-std()-Y]**                        numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Jerk Measurement Windows in the y axial direction  
 
-        **[timeBodyGyroscopeJerk-std()-Y]**                        numeric            180  0.00 %                
+        **[timeBodyGyroscopeJerk-std()-Z]**                        numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Jerk Measurement Windows in the z axial direction               
 
-        **[timeBodyGyroscopeJerk-std()-Z]**                        numeric            180  0.00 %                
+        **[timeBodyAccelerometerMagnitude-std()]**                 numeric            180  0.00 %   Standard deviation of time domain signals for Body Accelerometer Magnitude Measurement Windows              
 
-        **[timeBodyAccelerometerMagnitude-std()]**                 numeric            180  0.00 %                
+        **[timeGravityAccelerometerMagnitude-std()]**              numeric            180  0.00 %   Standard deviation of time domain signals for Gravity Accelerometer Magnitude Measurement Windows            
 
-        **[timeGravityAccelerometerMagnitude-std()]**              numeric            180  0.00 %                
+        **[timeBodyAccelerometerJerkMagnitude-std()]**             numeric            180  0.00 %   Standard deviation of time domain signals for Body Jerk Accelerometer Magnitude Measurement Windows             
 
-        **[timeBodyAccelerometerJerkMagnitude-std()]**             numeric            180  0.00 %                
+        **[timeBodyGyroscopeMagnitude-std()]**                     numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Magnitude Measurement Windows             
 
-        **[timeBodyGyroscopeMagnitude-std()]**                     numeric            180  0.00 %                
+        **[timeBodyGyroscopeJerkMagnitude-std()]**                 numeric            180  0.00 %   Standard deviation of time domain signals for Body Gyroscope Jerk Magnitude Measurement Windows             
 
-        **[timeBodyGyroscopeJerkMagnitude-std()]**                 numeric            180  0.00 %                
+        **[frequencyBodyAccelerometer-std()-X]**                   numeric            180  0.00 %   Standard deviation of frequency of Body Acellerometer Windows in the X axial direction                
 
-        **[frequencyBodyAccelerometer-std()-X]**                   numeric            180  0.00 %                
+        **[frequencyBodyAccelerometer-std()-Y]**                   numeric            180  0.00 %   Standard deviation of frequency of Body Acellerometer Windows in the y axial direction             
 
-        **[frequencyBodyAccelerometer-std()-Y]**                   numeric            180  0.00 %                
+        **[frequencyBodyAccelerometer-std()-Z]**                   numeric            180  0.00 %   Standard deviation of frequency of Body Acellerometer Windows in the z axial direction             
 
-        **[frequencyBodyAccelerometer-std()-Z]**                   numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-std()-X]**               numeric            180  0.00 %   Standard deviation of frequency of Body Acellerometer Jerk Windows in the X axial direction             
 
-        **[frequencyBodyAccelerometerJerk-std()-X]**               numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-std()-Y]**               numeric            180  0.00 %   Standard deviation of frequency of Body Acellerometer Jerk Windows in the y axial direction             
 
-        **[frequencyBodyAccelerometerJerk-std()-Y]**               numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerk-std()-Z]**               numeric            180  0.00 %   Standard deviation of frequency of Body Acellerometer Jerk Windows in the z axial direction             
 
-        **[frequencyBodyAccelerometerJerk-std()-Z]**               numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-std()-X]**                       numeric            180  0.00 %   Standard deviation of frequency of Body Gyroscope Windows in the X axial direction             
 
-        **[frequencyBodyGyroscope-std()-X]**                       numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-std()-Y]**                       numeric            180  0.00 %   Standard deviation of frequency of Body Gyroscope Windows in the y axial direction             
 
-        **[frequencyBodyGyroscope-std()-Y]**                       numeric            180  0.00 %                
+        **[frequencyBodyGyroscope-std()-Z]**                       numeric            180  0.00 %   Standard deviation of frequency of Body Gyroscope Windows in the z axial direction             
 
-        **[frequencyBodyGyroscope-std()-Z]**                       numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerMagnitude-std()]**            numeric            180  0.00 %   Standard deviation of frequency of Body Accelerometer Mangnitude Windows 
 
-        **[frequencyBodyAccelerometerMagnitude-std()]**            numeric            180  0.00 %                
+        **[frequencyBodyAccelerometerJerkMagnitude-std()]**        numeric            180  0.00 %   Standard deviation of frequency of Body Jerk Accelerometer Mangnitude Windows              
 
-        **[frequencyBodyAccelerometerJerkMagnitude-std()]**        numeric            180  0.00 %                
+        **[frequencyBodyGyroscopeMagnitude-std()]**                numeric            180  0.00 %   Standard deviation of frequency of Body Gyroscope Mangnitude Windows              
 
-        **[frequencyBodyGyroscopeMagnitude-std()]**                numeric            180  0.00 %                
-
-        **[frequencyBodyGyroscopeJerkMagnitude-std()]**            numeric            180  0.00 %                
+        **[frequencyBodyGyroscopeJerkMagnitude-std()]**            numeric            180  0.00 %   Standard deviation of frequency of Body Gyroscope Jerk Mangnitude Windows              
 -----------------------------------------------------------------------------------------------------------------
 
 
